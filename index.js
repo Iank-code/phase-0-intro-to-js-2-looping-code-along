@@ -1,18 +1,25 @@
 // Code your solutions in this file
 
 // Done 1
-const randomName = ['Guadalupe', 'Ollie', 'Aki']
-const loopArr = [...randomName]
-function writeCards(loopArr, event){
-    let messages = []
-    for (let i = 0; i < loopArr.length; i++) {
-        const message = `Thank you, ${loopArr[i]}, for the wonderful ${event}!`;
-        messages.push(message)
-        return messages
+function writeCards(names,event){
+    const messages = [];
+    for(let i = 0; i < names.length;i++) {
+           const thankYouMessage = `Thank you, ${names[i]}, for the wonderful ${event} gift!`
+           messages.push(thankYouMessage)
     }
+    return messages;
 }
-writeCards(randomName, "gift")
+console.log(writeCards(["Guadalupe", "Ollie", "Aki"], "surprise"))
 
+/* function writeCards(names,event){
+    const messages = [];
+    for(let i = 0; i < names.length;i++) {
+           const thankYouMessage = `Thank you, ${names[i]}, for the wonderful ${event} gift!`
+           messages.push(thankYouMessage)
+    }
+    return messages;
+}
+console.log(writeCards(["Guadalupe", "Ollie", "Aki"], "surprise")) */
 
 // While
 function countDown(countup){
